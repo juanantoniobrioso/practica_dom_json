@@ -3,6 +3,13 @@ const textoEncabezado = document.getElementById(encabezado);
 const colorParrafo = document.getElementsByTagName("p");
 
 encabezado.innerText = "HOLA";
-colorParrafo.style.color = "green"; //no funciona
+colorParrafo.style.color = "#008f39"; //no funciona
 
 //2. Modificación de varios elementos
+const textos = document.getElementsByClassName("text");
+for (let i = 0; i < textos.length; i++){
+    textos[i].style.color="#9b9b9b";
+}
+//3. Selección con querySelector
+const caja = document.querySelector(".caja");
+caja.style.backgroundColor = "red";
